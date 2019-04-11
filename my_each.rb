@@ -7,4 +7,3 @@ end
 words
 end
 
-my_each(words) {|x| puts x}

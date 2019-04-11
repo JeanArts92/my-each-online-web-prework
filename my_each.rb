@@ -1,9 +1,10 @@
 def my_each(words)
- words.collect do |word|
-   while word.length > 5 
-   puts word
-   yield(words)
-   words
+i = 0
+while i < words.length
+yield(words[i])
+i += 1
 end
+words
 end
-end
+
+my_each(words) {|x| puts x}
